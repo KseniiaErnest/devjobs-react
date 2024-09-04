@@ -8,7 +8,7 @@ export default function SearchBar() {
       <label className='search-input check'>
       <input className='search-input--checkbox'  type='checkbox' />
       Full Time Only
-      <button className='search--btn'>Search</button>
+      <button className='btn search'>Search</button>
       </label>
     </form>
   )

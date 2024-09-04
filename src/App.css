@@ -15,7 +15,7 @@ html {
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 2rem 1rem;
   background-color: #f4f6fb;
 }
 
@@ -58,25 +58,24 @@ nav {
   align-items: self-start;
   background-color: #fff;
   list-style: none;
- padding: 1rem 0 1.5rem 2rem;
+  padding: 1rem 0 1.5rem 2rem;
   border-radius: 0.3rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   gap: 0.5rem;
 }
 
 .jobs-list--item > div {
-display: flex;
-gap: 3px;
-color: #9daec2;
+  display: flex;
+  gap: 3px;
+  color: #9daec2;
 }
 
 .jobs-list--company {
   color: #9daec2;
 }
 
-
 .jobs-list--location {
- color: #6c53da;
+  color: #6c53da;
   font-weight: 900;
   font-size: 0.875rem;
   line-height: 1.125rem;
@@ -97,8 +96,8 @@ color: #9daec2;
   height: 100%;
   border: none;
   border-radius: 0.3rem;
-  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
-
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
 .different {
@@ -106,7 +105,7 @@ color: #9daec2;
 }
 
 .location {
-width: 26%;
+  width: 26%;
 }
 
 .check {
@@ -124,15 +123,29 @@ width: 26%;
   height: 1.5rem;
 }
 
-.search--btn {
+.search {
   width: 7.7rem;
+}
+
+.load {
+  width: 8.8rem;
+  margin-top: 2rem;
+  transition: all 0.3s;
+}
+
+.load:hover {
+  background-color: #6c53daad;
+}
+
+.btn {
   height: 3rem;
+  font-family: "Kumbh Sans";
   border: none;
   background-color: #6c53da;
   border-radius: 0.3rem;
-  font-family: "Kumbh Sans";
   color: #fff;
+  font-weight: 700;
   font-size: 1rem;
   line-height: 1.125rem;
-  font-weight: 700;
+  cursor: pointer;
 }

@@ -82,3 +82,57 @@ color: #9daec2;
   line-height: 1.125rem;
   margin-top: 2rem;
 }
+
+.search--container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 69.4rem;
+  height: 5rem;
+  margin-top: 2rem;
+  gap: 2px;
+}
+
+.search-input {
+  height: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+
+}
+
+.different {
+  width: 38%;
+}
+
+.location {
+width: 26%;
+}
+
+.check {
+  width: 36%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 1rem; */
+  font-weight: 700;
+}
+
+.search-input--checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.search--btn {
+  width: 7.7rem;
+  height: 3rem;
+  border: none;
+  background-color: #6c53da;
+  border-radius: 0.3rem;
+  font-family: "Kumbh Sans";
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+}

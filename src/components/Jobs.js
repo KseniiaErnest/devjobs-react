@@ -1,13 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Jobs({ jobs }) {
+  const navigate = useNavigate();
   if (!jobs) return <h2>Something is wrong or there are no jobs</h2>;
 
   return (
     <div className="jobs-list--container">
       <ul className="jobs-list--box">
         {jobs.map((job) => (
-          <li className="jobs-list--item" key={job.id}>
+          <li className="jobs-list--item" key={job.id} onClick={() => navigate(`/jobboard/job/${job.id}`)}>
             <img src={job.logo} alt={job.company}></img>
             <div>
             <p>{job.postedAt}</p>

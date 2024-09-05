@@ -6,6 +6,7 @@ import Jobboard from './pages/Jobboard';
 import MyFavorite from './pages/MyFavorite';
 import { useContext, useEffect, useState } from 'react';
 import { Context } from './context';
+import JobDetails from './components/JobDetails';
 
 function App() {
   const {state, dispatch} = useContext(Context);
@@ -16,7 +17,6 @@ function App() {
         const response = await fetch('./data.json');
         if (!response.ok) throw new Error('Something is wrong!')
         const data = await response.json();
-        console.log(data);
         dispatch({type: 'SET_JOBS', payload: data});
   
       } catch(err) {
@@ -34,7 +34,8 @@ function App() {
     <NavBar />
       <Routes>
         <Route path='/' element={<Homepage />} />
-        <Route path='/jobboard' element={<Jobboard jobs={state.jobs} />} />
+        <Route path='/jobboard' element={<Jobboard />} />
+        <Route path='/jobboard/job/:idJob' element={<JobDetails />} />
         <Route path='/myfavorite' element={<MyFavorite />} />
       </Routes>
     </Router>

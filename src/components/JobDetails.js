@@ -12,8 +12,21 @@ export default function JobDetails() {
 
 
   return (
-    <div>
-       <h3>{job.position}</h3>
+    <div className='job-details--container'>
+      <div className='job-details--box-one'>
+      <div className='job-details--box-one-smaller-one'>
+      <div className='job-details--img-box' style={{backgroundColor: job.logoBackground}} >
+        <img src={`${process.env.PUBLIC_URL}${job.logo}`} alt={job.company} />
+        </div>
+         <div>
+          <h3>{job.company}</h3>
+          <p>{job.website}</p>
+        </div>
+        </div>
+        <button>Company Site</button>
+      </div>
+      <div className='job-details--box-two'></div>
+      <div className='job-details--box-three'></div>
     </div>
   )
 }

@@ -149,3 +149,35 @@ nav {
   line-height: 1.125rem;
   cursor: pointer;
 }
+
+/* JOB DETAILS */
+.job-details--container {
+  display: flex;
+  flex-direction: column;
+  width: 45.625rem;
+  margin: 0 auto;
+}
+
+.job-details--box-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8.75rem;
+}
+
+.job-details--box-one-smaller-one {
+  display: flex;
+}
+
+.job-details--img-box {
+  width: 8.75rem;
+  height: 8.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-details--box-one-smaller-one > img {
+  height: 1.44rem;
+  width: 5.1rem;
+}

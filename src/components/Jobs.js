@@ -10,7 +10,7 @@ export default function Jobs({ jobs }) {
       <ul className="jobs-list--box">
         {jobs.map((job) => (
           <li className="jobs-list--item" key={job.id} onClick={() => navigate(`/jobboard/job/${job.id}`)}>
-            <img src={job.logo} alt={job.company}></img>
+            <img style={{backgroundColor: job.logoBackground}} src={job.logo} alt={job.company}></img>
             <div>
             <p>{job.postedAt}</p>
             <span>・</span>

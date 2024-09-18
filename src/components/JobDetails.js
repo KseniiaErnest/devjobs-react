@@ -13,11 +13,20 @@ export default function JobDetails() {
   const isJobSaved = state.myFavoriteJobs.find((savedJob) => savedJob.id === parseInt(idJob));
 
 
-const handleSaveJob = (jobToSave) => {
-if (!isJobSaved) {
-    dispatch({type: 'SAVE_JOB', payload: jobToSave});
-  }
-}
+  const handleSaveJob = (jobToSave) => {
+    try {
+      const savedJobs = JSON.parse(localStorage.getItem('favJobs')) || [];
+      const isJobAlreadySaved = savedJobs.some((savedJob) => savedJob.id === jobToSave.id);
+
+      if (!isJobAlreadySaved) {
+        const updatedJobs = [...savedJobs, jobToSave];
+        dispatch({ type: 'SAVE_JOB', payload: jobToSave });
+        localStorage.setItem('favJobs', JSON.stringify(updatedJobs));
+      }
+    } catch (error) {
+      console.error("Failed to save job:", error);
+    }
+  };
 
 
   return (
@@ -80,3 +89,12 @@ if (!isJobSaved) {
     </div>
   );
 }
+
+
+// const handleSaveJob = (jobToSave) => {
+//   const savedJobs = JSON.parse(localStorage.getItem('favJobs')) || [];
+// if (!isJobSaved) {
+//     dispatch({type: 'SAVE_JOB', payload: jobToSave});
+//     localStorage.setItem('favJobs', JSON.stringify(jobToSave));
+//   }
+// }

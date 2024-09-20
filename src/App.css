@@ -40,6 +40,26 @@ nav {
   gap: 1rem;
 }
 
+.nav--link {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.nav--link:hover {
+  color: #dbd6f5;
+}
+
+.nav--link:visited, .nav--link:active, .nav--link:link {
+text-decoration: none;
+
+}
+
+.theme-slider--container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 .jobs-list--container {
   width: 69.4rem;
   margin: 0 auto;
@@ -80,6 +100,43 @@ nav {
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-top: 2rem;
+}
+
+.job--logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 1rem; 
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* .svg {
+  width: 50px;
+  height: 50px;
+} */
+
+
+/* 
+.svg-text {
+  text-anchor: middle; 
+  dominant-baseline: middle; 
+  
+
+} */
+
+
+
+.jobs-list--item-position:hover {
+color: #9daec2;
+transition: all 0.3s;
 }
 
 .search--container {
@@ -225,4 +282,38 @@ nav {
 font-size: 1rem;
 line-height: 1.625rem;
 color: #6e8098;
+}
+
+
+/*  SLIDER */
+
+.theme--slider {
+  position: relative;
+  width: 2.9rem;
+  height: 1.4rem;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 3rem;
+  box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4)
+}
+
+.theme--slider .fill {
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  bottom: 0;
+  border-radius: 50%;
+  background: #6c53da;
+  width: 0.9rem;
+  height: 0.9rem;
+  transition: 0.4s left;
+}
+
+.theme--slider input {
+  width: 0;
+  visibility: hidden;
+}
+
+.theme--slider input:checked + span.fill {
+  left: calc(100% - (0.9rem + 3px));
 }

@@ -5,6 +5,7 @@ const Context = createContext();
 const initialState = {
   jobs: [],
   myFavoriteJobs: [],
+  darkMode: false,
 };
 
 function reducer(state, action) {
@@ -12,8 +13,8 @@ switch(action.type) {
 case 'SET_JOBS': return {...state, jobs: action.payload};
 case 'SAVE_JOB': return {...state, myFavoriteJobs: [...state.myFavoriteJobs, action.payload]};
 case 'LOAD_FAV_JOBS': return {...state, myFavoriteJobs: action.payload};
-case 'DELETE_FAV_JOB': return {...state, myFavoriteJobs: state.myFavoriteJobs.filter((job) => job.id !== action.payload.id)
-}
+case 'DELETE_FAV_JOB': return {...state, myFavoriteJobs: state.myFavoriteJobs.filter((job) => job.id !== action.payload.id)};
+case 'TOGGLE_MODE': return {...state, darkMode: !state.darkMode};
 
 
   default:

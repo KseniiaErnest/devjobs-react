@@ -11,6 +11,14 @@ import JobDetails from './components/JobDetails';
 function App() {
   const {state, dispatch} = useContext(Context);
 
+  const applyMode = (modeDark) => {
+    if (modeDark === true) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode')
+    }
+  }
+
   useEffect(() => {
     const getData = async () => {
       try {
@@ -26,6 +34,9 @@ function App() {
     }
     getData();
    }, [dispatch]);
+
+
+
 
 
   return (

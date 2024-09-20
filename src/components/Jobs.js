@@ -9,14 +9,16 @@ export default function Jobs({ jobs }) {
     <div className="jobs-list--container">
       <ul className="jobs-list--box">
         {jobs.map((job) => (
-          <li className="jobs-list--item" key={job.id} onClick={() => navigate(`/jobboard/job/${job.id}`)}>
-            <img style={{backgroundColor: job.logoBackground}} src={job.logo} alt={job.company}></img>
+          <li className="jobs-list--item" key={job.id}>
+          <div className="job--logo" >
+            <img className="svg-image" style={{backgroundColor: job.logoBackground}} src={job.logo} alt={job.company}></img>
+            </div>
             <div>
             <p>{job.postedAt}</p>
             <span>・</span>
             <p>{job.contract}</p>
             </div>
-            <h3>{job.position}</h3>
+            <h3 className="jobs-list--item-position" onClick={() => navigate(`/jobboard/job/${job.id}`)}>{job.position}</h3>
             <p className="jobs-list--company">{job.company}</p>
             <p className="jobs-list--location">{job.location}</p>
           </li>

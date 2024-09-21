@@ -35,6 +35,18 @@ function App() {
     getData();
    }, [dispatch]);
 
+   useEffect(() => {
+applyMode(state.darkMode);
+localStorage.setItem('dark-mode', state.darkMode)
+   }, [state.darkMode]);
+
+   useEffect(() => {
+    const darkModeStorage = localStorage.getItem('dark-mode') === 'true';
+    if (darkModeStorage !== state.darkMode) {
+      dispatch({ type: 'TOGGLE_MODE' });
+    }
+  }, []);
+
 
 
 

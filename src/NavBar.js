@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { Context } from './context'
 
 export default function NavBar() {
+  const { state, dispatch } = useContext(Context)
   return (
     <header>
       <nav>
@@ -19,7 +21,7 @@ export default function NavBar() {
         </g>
         </svg>
         <label className='theme--slider'>
-          <input type='checkbox' />
+          <input checked={state.darkMode} onChange={() => dispatch({type: 'TOGGLE_MODE'})} type='checkbox'  />
           <span className='fill'></span>
         </label>
        

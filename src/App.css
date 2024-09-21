@@ -317,3 +317,13 @@ color: #6e8098;
 .theme--slider input:checked + span.fill {
   left: calc(100% - (0.9rem + 3px));
 }
+
+/* DARK MODE */
+
+body.dark-mode .App {
+background-color: #121721
+}
+
+body.dark-mode .jobs-list--item {
+  background-color: #19202d;
+}

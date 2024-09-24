@@ -6,6 +6,11 @@ const initialState = {
   jobs: [],
   myFavoriteJobs: [],
   darkMode: false,
+  searchFilter: {
+    titleCompanyExpertise: '',
+    location: '',
+    fullTime: false,
+  }
 };
 
 function reducer(state, action) {
@@ -15,6 +20,7 @@ case 'SAVE_JOB': return {...state, myFavoriteJobs: [...state.myFavoriteJobs, act
 case 'LOAD_FAV_JOBS': return {...state, myFavoriteJobs: action.payload};
 case 'DELETE_FAV_JOB': return {...state, myFavoriteJobs: state.myFavoriteJobs.filter((job) => job.id !== action.payload.id)};
 case 'TOGGLE_MODE': return {...state, darkMode: !state.darkMode};
+case 'UPDATE_SEARCH_FILTER': return {...state, searchFilter: { ...state.searchFilter, ...action.payload}};
 
 
   default:

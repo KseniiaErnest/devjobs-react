@@ -13,6 +13,58 @@ export default function Jobboard() {
   const [index, setIndex] = useState(6);
   const [btnVisisble, setBtnVisible] = useState(true);
 
+  const filteredJobs = state.jobs.filter((jobToFilter) => {
+    const titleCompanyExpertiseMatch = jobToFilter.position.toLowerCase().includes(state.searchFilter.titleCompanyExpertise.toLowerCase()) || 
+    jobToFilter.company.toLowerCase().includes(state.searchFilter.titleCompanyExpertise.toLowerCase());
+    
+    const locationMatch = jobToFilter.location.toLowerCase().includes(state.searchFilter.location.toLowerCase());
+
+    const fullTimeMatch = state.searchFilter.fullTime ? jobToFilter.contract === 'Full Time' : true;
+
+    return titleCompanyExpertiseMatch && locationMatch && fullTimeMatch;
+    
+  })
+
+
+  // Use useEffect to set displayedJobs 
+  useEffect(() => {
+    try{
+  // We need to be sure that state.jobs was fetched and not an empty array    
+if (filteredJobs.length > 0) {
+  setDisplayedJobs(filteredJobs.slice(0, index));
+  // Use slice because it does not mutate the jobs state.
+}
+
+    }catch(err) {
+      console.log(err);
+    }
+
+    // Only renderes when state.jobs or index change
+  }, [filteredJobs, index]);
+
+
+  const handleMoreJobs = () => {
+    if (index + 6 < filteredJobs.length) {
+      setIndex((index) => index + 6);
+    } else {
+      // setIndex((index) => (state.jobs.length - index) + index);
+      setIndex(filteredJobs.length);
+      setBtnVisible(false);
+    }
+
+  }
+
+  return (
+    <div>
+      <SearchBar />
+     <Jobs jobs={displayedJobs} />
+     {btnVisisble && <button className='btn load' onClick={handleMoreJobs}>Load More</button>}
+    </div>
+  )
+}
+
+
+/*
 
   // Use useEffect to set displayedJobs 
   useEffect(() => {
@@ -40,13 +92,4 @@ if (state.jobs.length > 0) {
       setBtnVisible(false);
     }
 
-  }
-
-  return (
-    <div>
-      <SearchBar />
-     <Jobs jobs={displayedJobs} />
-     {btnVisisble && <button className='btn load' onClick={handleMoreJobs}>Load More</button>}
-    </div>
-  )
-}
+*/

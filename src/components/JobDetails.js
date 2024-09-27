@@ -42,12 +42,12 @@ export default function JobDetails() {
               alt={job.company}
             />
           </div>
-          <div>
+          <div className="job-details--company">
             <h3>{job.company}</h3>
             <p>{job.website}</p>
           </div>
         </div>
-        <button>Company Site</button>
+        <button className="fake-link-btn">Company Site</button>
       </div>
       <div className="job-details--box-two">
         <div className="job-details--box-two-smaller-one">
@@ -58,9 +58,9 @@ export default function JobDetails() {
 
         <div className="job-details--box-two-smaller-two">
           <h3>{job.position}</h3>
-          <button>Apply Now</button>
+          <button className='btn search'>Apply Now</button>
         </div>
-        <p className="text--left">{job.location}</p>
+        <p className="text--left text--location">{job.location}</p>
         <div className="job-details--box-two-job--description text--body">
           {job.description}
         </div>
@@ -84,7 +84,7 @@ export default function JobDetails() {
         </div>
       </div>
       <div className="job-details--box-three">
-        <button onClick={() => handleSaveJob(job)} disabled={isJobSaved}>{isJobSaved ? 'Saved Job' : 'Save'}</button>
+        <button className='btn search' onClick={() => handleSaveJob(job)} disabled={isJobSaved}>{isJobSaved ? 'Saved Job' : 'Save'}</button>
       </div>
     </div>
   );

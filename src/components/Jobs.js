@@ -11,9 +11,9 @@ export default function Jobs({ jobs }) {
         {jobs.map((job) => (
           <li className="jobs-list--item" key={job.id}>
           <div className="job--logo" >
-            <img className="svg-image" style={{backgroundColor: job.logoBackground}} src={job.logo} alt={job.company}></img>
+            <img className="svg-image" src={job.logo} alt={job.company}></img>
             </div>
-            <div>
+            <div className="jobs-list--item-postedAt">
             <p>{job.postedAt}</p>
             <span>・</span>
             <p>{job.contract}</p>

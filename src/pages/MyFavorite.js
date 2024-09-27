@@ -27,12 +27,12 @@ localStorage.setItem('favJobs', JSON.stringify(updatedList));
       <ul className="jobs-list--box">
         {state.myFavoriteJobs.map((favJob) => (
           <li className="jobs-list--item" key={favJob.id}>
-          <div onClick={() => navigate(`/jobboard/job/${favJob.id}`)}>
+          <div className='favorite-box' onClick={() => navigate(`/jobboard/job/${favJob.id}`)}>
           <h3>{favJob.position}</h3>
-          <p className="jobs-list--company">{favJob.company}</p>
-          <p className="jobs-list--location">{favJob.location}</p>
+          <p >{favJob.company}</p>
+          <p >{favJob.location}</p>
           </div>
-          <button onClick={() => handleDeleteFavJob(favJob)}>X</button>
+          <button className='favorite--btn-delete' onClick={() => handleDeleteFavJob(favJob)}>X</button>
         </li>
         ))}
       </ul>

@@ -43,21 +43,21 @@ export default function JobDetails() {
             />
           </div>
           <div className="job-details--company">
-            <h3>{job.company}</h3>
-            <p>{job.website}</p>
+            <h3 className="text-dark--mode">{job.company}</h3>
+            <p className="text-dark--mode">{job.website}</p>
           </div>
         </div>
         <button className="fake-link-btn">Company Site</button>
       </div>
       <div className="job-details--box-two">
         <div className="job-details--box-two-smaller-one">
-          <p>{job.postedAt}</p>
-          <span>・</span>
-          <p>{job.contract}</p>
+          <p className="text-dark--mode">{job.postedAt}</p>
+          <span className="text-dark--mode">・</span>
+          <p className="text-dark--mode">{job.contract}</p>
         </div>
 
         <div className="job-details--box-two-smaller-two">
-          <h3>{job.position}</h3>
+          <h3 className="text-dark--mode">{job.position}</h3>
           <button className='btn search'>Apply Now</button>
         </div>
         <p className="text--left text--location">{job.location}</p>
@@ -65,7 +65,7 @@ export default function JobDetails() {
           {job.description}
         </div>
         <div className="job-details--box-two-smaller-three">
-          <h4>Requirements</h4>
+          <h4 className="text-dark--mode">Requirements</h4>
           <p className="text--left text--body">{job.requirements.content}</p>
           <ul className="text--left text--body">
             {job.requirements.items.map((item, index) => (
@@ -74,7 +74,7 @@ export default function JobDetails() {
           </ul>
         </div>
         <div className="job-details--box-two-smaller-three">
-          <h4>What You Will Do</h4>
+          <h4 className="text-dark--mode">What You Will Do</h4>
           <p className="text--left text--body">{job.role.content}</p>
           <ol className="text--left text--body">
             {job.role.items.map((item, index) => (

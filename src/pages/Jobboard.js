@@ -35,6 +35,13 @@ if (filteredJobs.length > 0) {
   // Use slice because it does not mutate the jobs state.
 }
 
+// Also we need to check if filtered jobs length is less or equal to the current index to handle load more btn visibility
+if (filteredJobs.length <= index) {
+setBtnVisible(false);
+} else {
+  setBtnVisible(true);
+}
+
     }catch(err) {
       console.log(err);
     }

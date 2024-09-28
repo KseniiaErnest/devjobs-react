@@ -10,8 +10,9 @@ export default function Jobs({ jobs }) {
       <ul className="jobs-list--box">
         {jobs.map((job) => (
           <li className="jobs-list--item" key={job.id}>
-          <div className="job--logo" >
-            <img className="svg-image" src={job.logo} alt={job.company}></img>
+          <div className="job--logo" style={{backgroundColor: job.logoBackground}}>
+            {/* <img className="svg-image" src={job.logo} alt={job.company}></img> */}
+  
             </div>
             <div className="jobs-list--item-postedAt">
             <p>{job.postedAt}</p>

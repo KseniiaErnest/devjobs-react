@@ -120,18 +120,7 @@ nav {
   object-fit: contain;
 }
 
-/* .svg {
-  width: 50px;
-  height: 50px;
-} */
 
-/* 
-.svg-text {
-  text-anchor: middle; 
-  dominant-baseline: middle; 
-  
-
-} */
 
 .jobs-list--item-position:hover {
   color: #9daec2;
@@ -151,24 +140,34 @@ nav {
 }
 
 .search-input {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.1rem;
   height: 100%;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
     rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  
+}
+
+.search-input:focus {
+  outline: transparent;
+  border: 1px solid #6c53da34;
 }
 
 .different {
-  width: 38%;
+  width: 100%;
   border: none;
   border-top-left-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem;
+  padding-left: 4.5rem;
 }
 
 .location {
-  width: 26%;
+  width: 100%;
   border-top: none;
   border-bottom: none;
   border-left: 0.5px solid #6e809852;
   border-right: 0.5px solid #6e809852;
+  padding-left: 4.5rem;
 }
 
 .check {
@@ -190,6 +189,11 @@ nav {
 
 .search {
   width: 7.7rem;
+  transition: all 0.3s;
+}
+
+.search:hover {
+  background-color: #6c53dabe;
 }
 
 .load {
@@ -348,6 +352,27 @@ nav {
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
+.homepage-container--main {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.homepage-container--welcome > h2 {
+  font-size: 2.1rem;
+}
+
+.homepage-container--welcome > p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 1.5rem;
+}
+
+.homepage-container--slider {
+  display: flex;
+  
+}
+
 /*  SLIDER */
 
 .theme--slider {
@@ -380,6 +405,28 @@ nav {
 .theme--slider input:checked + span.fill {
   left: calc(100% - (0.9rem + 3px));
 }
+
+/* Input icons */
+.input-wrapper {
+position: relative;
+}
+
+.svg-search {
+  position: absolute;
+  top: 37%;
+  left: 15%;
+  transform: translate(-50%);
+  pointer-events: none;
+}
+
+.svg-location {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  transform: translate(-50%);
+  pointer-events: none;
+}
+
 
 /* DARK MODE */
 

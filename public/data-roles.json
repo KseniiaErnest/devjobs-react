@@ -3,13 +3,13 @@
     "id": 1,
     "role": "Frontend Developer",
     "description": "Responsible for building the user-facing side of websites and applications, focusing on layout, styling, and interactivity using HTML, CSS, and JavaScript.",
-    "image": "path-to-frontend-image.jpg"
+    "image": "/assets/front.png"
   },
   {
     "id": 2,
     "role": "Backend Developer",
     "description": "Works on the server-side of web applications, handling databases, server logic, and APIs to ensure smooth data flow and security.",
-    "image": "path-to-backend-image.jpg"
+    "image": "/assets/backend.png"
   },
   {
     "id": 3,

@@ -52,18 +52,21 @@ Let’s get you started – browse the latest openings, apply with ease, and ste
       </div>
 
       <div className='homepage-container--slider'>
-        <button onClick={prevRole}>Prev</button>
-        <div>
+        <button className='btn--slider border-left' onClick={prevRole}>&larr;</button>
+        <div className='role-container'>
         {dataRoles.length > 0 && (
           <>
+          
+          <img src={dataRoles[role].image} alt='logo'/>
+          <div className='role-description'>
           <h3>{dataRoles[role].role}</h3>
           <p>{dataRoles[role].description}</p>
-          <p>IMAGE</p>
+          </div>
           </>
         )}
           
         </div>
-        <button onClick={nextRole}>Next</button>
+        <button className='btn--slider border-right' onClick={nextRole}>&rarr;</button>
       </div>
     </div>
   )

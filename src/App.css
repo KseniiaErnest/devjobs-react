@@ -56,6 +56,10 @@ nav {
   text-decoration: none;
 }
 
+.nav-icon {
+  display: none;
+}
+
 .main-container {
   max-width: 70rem;
   margin: 0 auto;
@@ -225,10 +229,11 @@ nav {
 .job-details--container {
   display: flex;
   flex-direction: column;
-  width: 45.625rem;
+  max-width: 45.625rem;
   margin: 0 auto;
   gap: 1rem;
   margin-top: 2rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .job-details--box-one {
@@ -548,13 +553,48 @@ MOBILE
 /* HOMEPAGE less than 768px */
 /*JOBBOARD */
 @media all and (max-width: 52rem) {
- .search {
-  width: 6.5rem;
- }
+  .smaller-screen {
+    max-width: 3.5rem;
+  }
 }
 
 @media all and (max-width: 65rem) {
   .jobs-list--box {
     grid-template-columns: repeat(2, 21.8rem);
+  }
+}
+
+@media all and (max-width: 48rem) {
+  .nav--link {
+    display: none;
+  }
+
+  .nav-icon {
+    display: inline-block;
+  }
+
+  .no-text {
+display: none;
+  }
+}
+
+@media all and (max-width: 46rem) {
+  html {
+    font-size: 85%;
+  }
+  .jobs-list--box {
+    grid-template-columns: repeat(1, 21.8rem);
+  }
+
+  .role-container {
+    flex-direction: column;
+  }
+
+  .role-container > img {
+    align-self: stretch;
+  }
+
+  .role-description {
+    padding-bottom: 1rem;
   }
 }

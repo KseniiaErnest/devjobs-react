@@ -1,5 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Context } from '../context'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function SearchBar() {
   const { state, dispatch } = useContext(Context);
@@ -39,7 +41,10 @@ export default function SearchBar() {
       <label className='search-input check'>
       <input className='search-input--checkbox'  type='checkbox' name='fullTime' value={localSearchQuery.fullTime || false} onChange={(e) => handleSearchChange('fullTime', e)} />
       Full Time
-      <button className='btn search' type='submit'>Search</button>
+      <button className='btn search smaller-screen' type='submit'>
+      <span className='no-text'>Search</span>
+      <FontAwesomeIcon className='nav-icon' icon={faMagnifyingGlass} style={{color: "#ffffff",}} />
+      </button>
       </label>
     </form>
   )

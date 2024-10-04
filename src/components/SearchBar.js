@@ -38,7 +38,7 @@ export default function SearchBar() {
       </div>
       <label className='search-input check'>
       <input className='search-input--checkbox'  type='checkbox' name='fullTime' value={localSearchQuery.fullTime || false} onChange={(e) => handleSearchChange('fullTime', e)} />
-      Full Time Only
+      Full Time
       <button className='btn search' type='submit'>Search</button>
       </label>
     </form>

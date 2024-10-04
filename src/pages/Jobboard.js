@@ -30,7 +30,7 @@ export default function Jobboard() {
   useEffect(() => {
     try{
   // We need to be sure that state.jobs was fetched and not an empty array    
-if (filteredJobs.length > 0) {
+if (state.jobs.length > 0) {
   setDisplayedJobs(filteredJobs.slice(0, index));
   // Use slice because it does not mutate the jobs state.
 }
@@ -47,7 +47,7 @@ setBtnVisible(false);
     }
 
     // Only renderes when state.jobs or index change
-  }, [filteredJobs, index]);
+  }, [state.jobs, index, state.searchFilter]);
 
 
   const handleMoreJobs = () => {
@@ -62,7 +62,7 @@ setBtnVisible(false);
   }
 
   return (
-    <div>
+    <div className='main-container'>
       <SearchBar />
      <Jobs jobs={displayedJobs} />
      {btnVisisble && <button className='btn load' onClick={handleMoreJobs}>Load More</button>}

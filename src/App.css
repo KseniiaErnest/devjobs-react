@@ -491,6 +491,10 @@ nav {
   pointer-events: none;
 }
 
+.filter-icon {
+  display: none;
+}
+
 /* DARK MODE */
 
 body.dark-mode .App {
@@ -546,6 +550,18 @@ body.dark-mode .role-description > p {
   color: #dbd6f5;
 }
 
+body.dark-mode .filter-icon {
+  background-color: #19202d;
+  border: none;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+body.dark-mode .check-mobile {
+  background-color: #dbd6f5;
+  color: #121721;
+}
+
 /*
 MOBILE
 */
@@ -574,7 +590,7 @@ MOBILE
   }
 
   .no-text {
-display: none;
+    display: none;
   }
 }
 
@@ -606,15 +622,18 @@ display: none;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
-  justify-content: center;
-  align-items: center;
-   
-
+    justify-content: center;
+    align-items: center;
   }
 
   .model-content {
     display: flex;
     flex-direction: column;
+    background-color: #dbd6f5;
+    border-radius: 5px;
+    max-width: 15rem;
+    padding: 1rem;
+    gap: 0.7rem;
   }
 
   .no-display {
@@ -623,11 +642,79 @@ display: none;
 
   .filter-icon {
     background-color: #fff;
-   border: none;
-   display: flex;
-   align-items: center;
-   font-size: 1.3rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
   }
 
- 
+  .location {
+    padding: 1rem 1rem 1rem 2.5rem;
+    border-radius: 5px;
+  }
+
+  .svg-location {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    transform: translate(-50%);
+    pointer-events: none;
+  }
+
+  .search-mobile {
+    width: 100%;
+    background-color: #6c53da;
+    align-self: center;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .search-mobile:hover {
+    background-color: #6144e0bd;
+  }
+
+  .btn-close {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #6c53da;
+    color: #fff;
+    font-weight: 700;
+    align-self: center;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-close:hover {
+    background-color: #6c53dabd;
+  }
+
+  .smaller-screen {
+    max-width: 100%;
+  }
+
+  .check-mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: none;
+  }
+}
+
+@media all and (max-width: 26rem) {
+  html {
+    font-size: 80%;
+  }
+
+  .nav--pages {
+    gap: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .homepage-img {
+    max-width: 22.5rem;
+  }
 }

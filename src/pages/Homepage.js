@@ -57,7 +57,7 @@ Let’s get you started – browse the latest openings, apply with ease, and ste
         {dataRoles.length > 0 && (
           <>
           
-          <img src={dataRoles[role].image} alt='logo'/>
+          <img className='homepage-img' src={dataRoles[role].image} alt='logo'/>
           <div className='role-description'>
           <h3>{dataRoles[role].role}</h3>
           <p>{dataRoles[role].description}</p>

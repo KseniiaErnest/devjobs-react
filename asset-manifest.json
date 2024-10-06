@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/devjobs-react/static/css/main.1f10430a.css",
-    "main.js": "/devjobs-react/static/js/main.02d92369.js",
+    "main.js": "/devjobs-react/static/js/main.ab0affce.js",
     "static/js/453.ada038b7.chunk.js": "/devjobs-react/static/js/453.ada038b7.chunk.js",
     "index.html": "/devjobs-react/index.html",
     "main.1f10430a.css.map": "/devjobs-react/static/css/main.1f10430a.css.map",
-    "main.02d92369.js.map": "/devjobs-react/static/js/main.02d92369.js.map",
+    "main.ab0affce.js.map": "/devjobs-react/static/js/main.ab0affce.js.map",
     "453.ada038b7.chunk.js.map": "/devjobs-react/static/js/453.ada038b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f10430a.css",
-    "static/js/main.02d92369.js"
+    "static/js/main.ab0affce.js"
   ]
 }

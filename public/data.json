@@ -478,5 +478,315 @@
         "Proactively solve the problems most important to the business"
       ]
     }
+  },
+  {
+    "id": 16,
+    "company": "Nimbus",
+    "logo": "/assets/logos/general.svg",
+    "logoBackground": "hsl(210, 78%, 56%)",
+    "position": "Full Stack Developer",
+    "postedAt": "3d ago",
+    "contract": "Full Time",
+    "location": "Canada",
+    "website": "nimbus.com",
+    "apply": "https://example.com/nimbus/apply",
+    "description": "Nimbus is seeking a Full Stack Developer to join our team. You will be responsible for the design, development, and maintenance of cloud-based applications, working closely with product teams to deliver robust software solutions.",
+    "requirements": {
+      "content": "The ideal candidate has experience with both frontend and backend technologies. A solid understanding of cloud services and distributed systems is essential.",
+      "items": [
+        "4+ years of experience in full stack development.",
+        "Experience with Node.js and React.",
+        "Familiarity with AWS and cloud infrastructure.",
+        "Strong problem-solving skills."
+      ]
+    },
+    "role": {
+      "content": "As a Full Stack Developer, you will contribute to developing scalable applications while working alongside cross-functional teams. You will drive the design and implementation of new features.",
+      "items": [
+        "Collaborate with product and design teams to build interactive user interfaces.",
+        "Develop backend services using Node.js and other cloud-based technologies.",
+        "Ensure code quality and scalability of applications.",
+        "Work in an agile environment to deliver high-quality solutions."
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "company": "Streamline",
+    "logo": "/assets/logos/general.svg",
+    "logoBackground": "hsl(34, 86%, 57%)",
+    "position": "Backend Engineer",
+    "postedAt": "1w ago",
+    "contract": "Full Time",
+    "location": "Remote",
+    "website": "streamline.com",
+    "apply": "https://example.com/streamline/apply",
+    "description": "Streamline is looking for a Backend Engineer with a passion for building high-performance APIs and microservices. You will be part of a dynamic team responsible for the development and optimization of backend systems.",
+    "requirements": {
+      "content": "We are looking for a skilled backend engineer with experience in cloud-based systems and microservices architecture.",
+      "items": [
+        "5+ years of experience in backend development.",
+        "Expertise in Python and Django.",
+        "Experience with microservices architecture and Kubernetes.",
+        "Strong understanding of relational databases."
+      ]
+    },
+    "role": {
+      "content": "As a Backend Engineer, you will develop, optimize, and scale APIs while working closely with frontend engineers and DevOps teams.",
+      "items": [
+        "Build and maintain robust backend systems.",
+        "Collaborate with frontend developers to integrate user-facing elements.",
+        "Optimize the performance and scalability of backend services.",
+        "Ensure the security and reliability of data systems."
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "company": "Bytewave",
+    "logo": "/assets/logos/general.svg",
+    "logoBackground": "hsl(212, 67%, 50%)",
+    "position": "DevOps Engineer",
+    "postedAt": "2d ago",
+    "contract": "Full Time",
+    "location": "Germany",
+    "website": "bytewave.com",
+    "apply": "https://example.com/bytewave/apply",
+    "description": "Bytewave is hiring a DevOps Engineer to join our operations team. You will be responsible for managing cloud infrastructure and automation pipelines, ensuring continuous integration and delivery across all teams.",
+    "requirements": {
+      "content": "We are looking for someone with strong DevOps experience, particularly in cloud platforms and automation.",
+      "items": [
+        "3+ years of experience in DevOps.",
+        "Proficient with CI/CD pipelines and automation tools.",
+        "Experience with Docker and Kubernetes.",
+        "Familiarity with AWS, Azure, or Google Cloud."
+      ]
+    },
+    "role": {
+      "content": "In this role, you will work with development teams to streamline deployments, manage cloud infrastructure, and ensure the scalability of services.",
+      "items": [
+        "Automate deployment processes using CI/CD tools.",
+        "Maintain and monitor cloud infrastructure.",
+        "Collaborate with developers to ensure smooth application delivery.",
+        "Implement security measures and best practices for cloud services."
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "company": "Skyward",
+    "logo": "/assets/logos/general.svg",
+    "logoBackground": "hsl(200, 80%, 60%)",
+    "position": "Product Designer",
+    "postedAt": "5d ago",
+    "contract": "Contract",
+    "location": "Australia",
+    "website": "skyward.com",
+    "apply": "https://example.com/skyward/apply",
+    "description": "Skyward is seeking a Product Designer to create engaging and user-friendly digital experiences. You will collaborate with engineering and product teams to design intuitive interfaces and craft an exceptional user experience.",
+    "requirements": {
+      "content": "We are looking for a Product Designer with a strong portfolio showcasing user-centered design.",
+      "items": [
+        "3+ years of experience in product design.",
+        "Proficient in Figma, Sketch, or Adobe XD.",
+        "Strong understanding of UX principles.",
+        "Experience with responsive and mobile-first design."
+      ]
+    },
+    "role": {
+      "content": "As a Product Designer, you will be responsible for designing features and experiences for our platform, ensuring that all interactions are intuitive and user-focused.",
+      "items": [
+        "Create wireframes, prototypes, and high-fidelity designs.",
+        "Collaborate with product managers and engineers to implement designs.",
+        "Conduct user research and usability testing to inform design decisions.",
+        "Ensure that designs align with the overall product vision."
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "company": "Echo",
+    "logo": "/assets/logos/general.svg",
+    "logoBackground": "hsl(220, 90%, 55%)",
+    "position": "Mobile App Developer",
+    "postedAt": "1w ago",
+    "contract": "Full Time",
+    "location": "Japan",
+    "website": "echo.com",
+    "apply": "https://example.com/echo/apply",
+    "description": "Echo is seeking a Mobile App Developer to build and maintain our iOS and Android applications. You will work closely with the product and design teams to deliver a high-quality mobile experience to our users.",
+    "requirements": {
+      "content": "The ideal candidate is proficient in mobile app development and has experience with cross-platform tools.",
+      "items": [
+        "4+ years of experience in mobile development.",
+        "Proficiency with React Native or Flutter.",
+        "Strong knowledge of mobile architecture patterns.",
+        "Experience with app deployment to App Store and Google Play."
+      ]
+    },
+    "role": {
+      "content": "In this role, you will be responsible for building, testing, and deploying new mobile app features, ensuring a seamless user experience across both iOS and Android platforms.",
+      "items": [
+        "Develop new mobile app features using React Native or Flutter.",
+        "Optimize performance and scalability of mobile applications.",
+        "Collaborate with designers to ensure a consistent user interface.",
+        "Work with backend teams to integrate APIs and services."
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "company": "Vertex",
+    "logo": "/assets/logos/general.svg",
+    "logoBackground": "hsl(174, 76%, 45%)",
+    "position": "UX Researcher",
+    "postedAt": "4d ago",
+    "contract": "Contract",
+    "location": "United Kingdom",
+    "website": "vertex.com",
+    "apply": "https://example.com/vertex/apply",
+    "description": "Vertex is hiring a UX Researcher to join our design team. You will be responsible for conducting user research, analyzing data, and providing actionable insights to improve the user experience of our products.",
+    "requirements": {
+      "content": "We are looking for a UX Researcher with experience conducting both qualitative and quantitative research.",
+      "items": [
+        "2+ years of experience in UX research.",
+        "Strong knowledge of user-centered design principles.",
+        "Experience with usability testing and surveys.",
+        "Proficiency in data analysis and user journey mapping."
+      ]
+    },
+    "role": {
+      "content": "As a UX Researcher, you will be tasked with understanding our users' needs and behaviors, driving improvements to the overall user experience.",
+      "items": [
+        "Conduct interviews, usability tests, and surveys.",
+        "Analyze research data and present findings to stakeholders.",
+        "Collaborate with product and design teams to refine features.",
+        "Provide insights that inform the product development process."
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "company": "LucidLab",
+    "logo": "/assets/logos/general.svg",
+    "logoBackground": "hsl(210, 36%, 53%)",
+    "position": "Data Scientist",
+    "postedAt": "1w ago",
+    "contract": "Full Time",
+    "location": "United States",
+    "website": "lucidlab.com",
+    "apply": "https://example.com/lucidlab/apply",
+    "description": "LucidLab is searching for a Data Scientist to analyze large datasets and develop machine learning models to improve our product offerings. You will work closely with product and engineering teams to drive data-driven decision-making.",
+    "requirements": {
+      "content": "We are seeking a Data Scientist with a background in machine learning and statistical modeling.",
+      "items": [
+        "3+ years of experience in data science.",
+        "Proficiency in Python and R.",
+        "Experience with machine learning frameworks like TensorFlow or PyTorch.",
+        "Strong analytical and problem-solving skills."
+      ]
+    },
+    "role": {
+      "content": "As a Data Scientist, you will work with large datasets to extract insights and build models that improve product features and user experience.",
+      "items": [
+        "Analyze and interpret complex data sets.",
+        "Build and deploy machine learning models.",
+        "Collaborate with product teams to identify data-driven improvements.",
+        "Communicate insights to stakeholders and team members."
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "company": "EchoChain",
+    "logo": "/assets/logos/general.svg",
+    "logoBackground": "hsl(0, 78%, 62%)",
+    "position": "Blockchain Developer",
+    "postedAt": "3w ago",
+    "contract": "Full Time",
+    "location": "Singapore",
+    "website": "echochain.com",
+    "apply": "https://example.com/echochain/apply",
+    "description": "EchoChain is looking for a Blockchain Developer to join our team and build decentralized applications. You will be responsible for designing and implementing blockchain solutions using the latest technologies.",
+    "requirements": {
+      "content": "We are seeking a Blockchain Developer with experience in smart contracts and decentralized applications.",
+      "items": [
+        "3+ years of experience in blockchain development.",
+        "Proficiency in Solidity and Ethereum.",
+        "Experience with decentralized finance (DeFi) protocols.",
+        "Strong understanding of cryptographic algorithms."
+      ]
+    },
+    "role": {
+      "content": "In this role, you will develop and maintain blockchain-based solutions, contributing to the growth and success of EchoChain’s decentralized platform.",
+      "items": [
+        "Develop smart contracts using Solidity.",
+        "Integrate blockchain solutions with existing web applications.",
+        "Collaborate with frontend developers on decentralized application interfaces.",
+        "Ensure security and scalability of blockchain solutions."
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "company": "NeuroTek",
+    "logo": "/assets/logos/general.svg",
+    "logoBackground": "hsl(345, 85%, 56%)",
+    "position": "AI Engineer",
+    "postedAt": "2w ago",
+    "contract": "Full Time",
+    "location": "Sweden",
+    "website": "neurotek.com",
+    "apply": "https://example.com/neurotek/apply",
+    "description": "NeuroTek is hiring an AI Engineer to join our team in developing cutting-edge artificial intelligence models. You will work on state-of-the-art machine learning algorithms and neural networks to create intelligent solutions.",
+    "requirements": {
+      "content": "We are seeking an AI Engineer with experience in deep learning and neural networks.",
+      "items": [
+        "3+ years of experience in AI development.",
+        "Proficiency in Python and deep learning frameworks.",
+        "Experience with neural network architectures like CNNs, RNNs.",
+        "Strong problem-solving skills."
+      ]
+    },
+    "role": {
+      "content": "As an AI Engineer at NeuroTek, you will design and implement AI models to solve complex challenges, collaborating closely with data scientists and software engineers.",
+      "items": [
+        "Develop AI models using TensorFlow or PyTorch.",
+        "Train and fine-tune neural networks for various tasks.",
+        "Collaborate with data scientists to integrate AI solutions.",
+        "Optimize models for performance and scalability."
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "company": "Photon",
+    "logo": "/assets/logos/general.svg",
+    "logoBackground": "hsl(0, 65%, 50%)",
+    "position": "Frontend Engineer",
+    "postedAt": "6d ago",
+    "contract": "Full Time",
+    "location": "France",
+    "website": "photon.com",
+    "apply": "https://example.com/photon/apply",
+    "description": "Photon is looking for a Frontend Engineer with expertise in modern web development technologies. You will build interactive and high-performance web applications, collaborating with designers and backend engineers to create an exceptional user experience.",
+    "requirements": {
+      "content": "We are seeking a Frontend Engineer with a passion for building high-quality user interfaces.",
+      "items": [
+        "3+ years of experience in frontend development.",
+        "Expertise in React and JavaScript frameworks.",
+        "Experience with CSS3 and HTML5.",
+        "Strong understanding of web performance optimization."
+      ]
+    },
+    "role": {
+      "content": "As a Frontend Engineer, you will work on developing scalable and responsive user interfaces, ensuring that our products provide an exceptional experience across all devices.",
+      "items": [
+        "Develop frontend components using React.",
+        "Collaborate with backend engineers to integrate APIs.",
+        "Optimize applications for speed and scalability.",
+        "Ensure the technical feasibility of UI/UX designs."
+      ]
+    }
   }
 ]

@@ -1,10 +1,10 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, useActionData } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Homepage from './pages/Homepage';
 import Jobboard from './pages/Jobboard';
 import MyFavorite from './pages/MyFavorite';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 import { Context } from './context';
 import JobDetails from './components/JobDetails';
 
@@ -46,12 +46,6 @@ useEffect(() => {
 applyMode(state.darkMode);
 localStorage.setItem('dark-mode', state.darkMode)
    }, [state.darkMode]);
-
-
-
-
-
-
 
   return (
     <div className="App">

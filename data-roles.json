@@ -3,42 +3,42 @@
     "id": 1,
     "role": "Frontend Developer",
     "description": "Responsible for building the user-facing side of websites and applications, focusing on layout, styling, and interactivity using HTML, CSS, and JavaScript.",
-    "image": "assets/front.png"
+    "image": "front.png"
   },
   {
     "id": 2,
     "role": "Backend Developer",
     "description": "Works on the server-side of web applications, handling databases, server logic, and APIs to ensure smooth data flow and security.",
-    "image": "assets/backend.png"
+    "image": "backend.png"
   },
   {
     "id": 3,
     "role": "Full Stack Developer",
     "description": "Combines frontend and backend development, responsible for both the client-side and server-side of web applications.",
-    "image": "assets/fullstack.png"
+    "image": "fullstack.png"
   },
   {
     "id": 4,
     "role": "DevOps Engineer",
     "description": "Manages deployment, automation, and operations of software projects, ensuring smooth collaboration between development and IT operations.",
-    "image": "assets/devops.png"
+    "image": "devops.png"
   },
   {
     "id": 5,
     "role": "Mobile Developer",
     "description": "Develops applications for mobile devices, ensuring they are optimized for performance, usability, and screen size on both Android and iOS.",
-    "image": "assets/mobiledev.png"
+    "image": "mobiledev.png"
   },
   {
     "id": 6,
     "role": "Data Scientist",
     "description": "Analyzes large datasets to uncover insights and build predictive models, helping organizations make data-driven decisions.",
-    "image": "assets/datas.png"
+    "image": "datas.png"
   },
   {
     "id": 7,
     "role": "QA Engineer",
     "description": "Tests software applications to ensure quality and functionality through manual and automated testing processes.",
-    "image": "assets/qa.png"
+    "image": "qa.png"
   }
 ]

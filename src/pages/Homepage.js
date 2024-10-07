@@ -31,7 +31,7 @@ const [dataRoles, setDataRoles] = useState([]);
   useEffect(() => {
     const getData = async () => {
       try {
-const response = await fetch('/data-roles.json');
+const response = await fetch(`${process.env.PUBLIC_URL}/data-roles.json`);
 if (!response.ok) throw new Error('Something is wrong!');
 const data = await response.json();
 setDataRoles(data); 
